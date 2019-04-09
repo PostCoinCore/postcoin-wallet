@@ -15,6 +15,7 @@ import router from './router';
 import Default from '@/layouts/Default.vue';
 
 import store from './store'
+import i18n from './i18n'
 
 ShardsVue.install(Vue);
 
@@ -26,5 +27,6 @@ Vue.prototype.$eventHub = new Vue();
 new Vue({
   router,
   store,
+  i18n,
   render: h => h(App)
 }).$mount('#app');
